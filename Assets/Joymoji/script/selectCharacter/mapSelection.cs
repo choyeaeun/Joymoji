@@ -20,8 +20,8 @@ public class mapSelection : MonoBehaviour
         foreach (GameObject go in mapList)
             go.SetActive(false);
 
-        if (mapList[0])
-            mapList[0].SetActive(true);
+        if (mapList[index])
+            mapList[index].SetActive(true);
     }
 
     public void ToggleLeft()
@@ -51,5 +51,10 @@ public class mapSelection : MonoBehaviour
     {
         PlayerPrefs.SetInt("MapSelected", index);
         SceneManager.LoadScene("5_confirm");
+    }
+    public void LastConfirmButton()
+    {
+        PlayerPrefs.SetInt("MapSelected", index);
+        SceneManager.LoadScene("BodyScene");
     }
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Joymoji/Scene/5_confirm.unity
+- path: Assets/Joymoji/Scene/BodyScene.unity
   isLoaded: 1
   isActive: 1
