@@ -57,4 +57,9 @@ public class characterSelection : MonoBehaviour
         PlayerPrefs.SetInt("CharacterSelected", index);
         SceneManager.LoadScene("BodyScene");
     }
+
+    public void BackBtn()
+    {
+        SceneManager.LoadScene("2_choose");
+    }
 }

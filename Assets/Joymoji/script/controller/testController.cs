@@ -9,7 +9,7 @@ public class testController : MonoBehaviour
     private HumanBodyBones bone;
 
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
-    private BodySceneManager _BodyManager;
+    private BodySourceManager _BodyManager;
     private Animator animator = null;
     private Transform savedTrans = null;
 
@@ -33,7 +33,7 @@ public class testController : MonoBehaviour
             return;
         }
 
-        _BodyManager = BodySceneManager.GetComponent<BodySceneManager>();
+        _BodyManager = BodySceneManager.GetComponent<BodySourceManager>();
         if (_BodyManager == null)
         {
             return;

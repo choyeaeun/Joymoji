@@ -57,4 +57,14 @@ public class mapSelection : MonoBehaviour
         PlayerPrefs.SetInt("MapSelected", index);
         SceneManager.LoadScene("BodyScene");
     }
+
+    public void BackBtn()
+    {
+        SceneManager.LoadScene("3_B_character");
+    }
+
+    public void ConfirmBackBtn()
+    {
+        SceneManager.LoadScene("4_B_background");
+    }
 }

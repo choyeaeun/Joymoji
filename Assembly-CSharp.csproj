@@ -81,6 +81,7 @@
      <Compile Include="Assets\Joymoji\script\KinectUIWaitOverButton.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\characterSelection.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\mapSelection.cs" />
+     <Compile Include="Assets\Joymoji\script\selectCharacter\stickerSelection.cs" />
      <Compile Include="Assets\Joymoji\sticker\mona_controller.cs" />
      <Compile Include="Assets\KinectUIModule\Scripts\KinectInputModule.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />

@@ -8,7 +8,7 @@ public class BodySceneView : MonoBehaviour
     public Material BoneMaterial;
 
     private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
-    private BodySceneManager _BodyManager;
+    private BodySourceManager _BodyManager;
 
     private Dictionary<Kinect.JointType, Kinect.JointType> _BoneMap = new Dictionary<Kinect.JointType, Kinect.JointType>()
     {
@@ -43,7 +43,7 @@ public class BodySceneView : MonoBehaviour
     };
     void Start()
     {
-        _BodyManager = FindObjectOfType<BodySceneManager>();
+        _BodyManager = FindObjectOfType<BodySourceManager>();
     }
     void Update()
     {
