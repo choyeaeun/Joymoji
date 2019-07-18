@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Joymoji/Scene/3_B_character.unity
+- path: Assets/Joymoji/Scene/2_choose.unity
   isLoaded: 1
   isActive: 1

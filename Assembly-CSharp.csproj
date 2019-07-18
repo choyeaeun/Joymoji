@@ -110,6 +110,7 @@
      <Compile Include="Assets\Scripts\CaptureScreenShot.cs" />
      <Compile Include="Assets\Scripts\EmojiRotator.cs" />
      <Compile Include="Assets\Scripts\FollowMouse.cs" />
+     <None Include="Assets\Joymoji\mesh\coin\NewSurfaceShader.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/DS/Desktop/Git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
