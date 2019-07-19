@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EF420437-FF98-00FF-B613-46648058A923}</ProjectGuid>
+    <ProjectGuid>{BF3F2D37-4DBA-D7D1-B3DF-672BFD8A592F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,7 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Joymoji\mesh\sticker\mona_controller.cs" />
+     <Compile Include="Assets\Joymoji\mesh\body\objRotate.cs" />
+     <Compile Include="Assets\Joymoji\mesh\coin\coin_animation.cs" />
      <Compile Include="Assets\Joymoji\script\AbstractKinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneManager.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneView.cs" />
@@ -62,6 +63,8 @@
      <Compile Include="Assets\Joymoji\script\Button\a_start.cs" />
      <Compile Include="Assets\Joymoji\script\Button\b_back.cs" />
      <Compile Include="Assets\Joymoji\script\Button\b_body.cs" />
+     <Compile Include="Assets\Joymoji\script\Button\b_sticker.cs" />
+     <Compile Include="Assets\Joymoji\script\Button\backto_2_choose.cs" />
      <Compile Include="Assets\Joymoji\script\Button\bodyEmo.cs" />
      <Compile Include="Assets\Joymoji\script\Button\ButtonExample.cs" />
      <Compile Include="Assets\Joymoji\script\Button\ButtonTest.cs" />
@@ -72,12 +75,16 @@
      <Compile Include="Assets\Joymoji\script\Button\e_back.cs" />
      <Compile Include="Assets\Joymoji\script\Button\e_confirm.cs" />
      <Compile Include="Assets\Joymoji\script\Button\UIBtn.cs" />
+     <Compile Include="Assets\Joymoji\script\controller\testController.cs" />
+     <Compile Include="Assets\Joymoji\script\controller\wing_controller.cs" />
      <Compile Include="Assets\Joymoji\script\genericmanController.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUIWaitCursor.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUIWaitOverButton.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\characterSelection.cs" />
-     <Compile Include="Assets\Joymoji\script\testController.cs" />
+     <Compile Include="Assets\Joymoji\script\selectCharacter\mapSelection.cs" />
+     <Compile Include="Assets\Joymoji\script\selectCharacter\stickerSelection.cs" />
+     <Compile Include="Assets\Joymoji\sticker\mona_controller.cs" />
      <Compile Include="Assets\KinectUIModule\Scripts\KinectInputModule.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceView.cs" />
@@ -87,7 +94,6 @@
      <Compile Include="Assets\KinectView\Scripts\InfraredSourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
      <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
-     <Compile Include="Assets\mapSelection.cs" />
      <Compile Include="Assets\Scenes\kinectWrapper v1\AvatarController.cs" />
      <Compile Include="Assets\Scenes\kinectWrapper v1\BoneOrientationsConstraint.cs" />
      <Compile Include="Assets\Scenes\kinectWrapper v1\BoneOrientationsFilter.cs" />
@@ -106,21 +112,21 @@
      <Compile Include="Assets\Scripts\CaptureScreenShot.cs" />
      <Compile Include="Assets\Scripts\EmojiRotator.cs" />
      <Compile Include="Assets\Scripts\FollowMouse.cs" />
-     <Compile Include="Assets\wing_controller.cs" />
+     <None Include="Assets\Joymoji\mesh\coin\NewSurfaceShader.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -324,13 +330,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/DS/Desktop/Joymoji/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/Git/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -680,7 +686,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2EC3D344-3611-094D-B7D4-549541B0EE66}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{17349486-EF72-7FF1-6950-6B72FED496FB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

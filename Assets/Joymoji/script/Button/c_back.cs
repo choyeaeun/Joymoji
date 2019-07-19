@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class c_back : MonoBehaviour
+public class backto_2_choose : MonoBehaviour
 {
     private Button c_backBtn;
     // Use this for initialization

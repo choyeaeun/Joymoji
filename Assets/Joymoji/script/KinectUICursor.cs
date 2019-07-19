@@ -32,10 +32,12 @@ public class KinectUICursor : AbstractKinectUICursor
         if (_data.IsHovering)
         {
             _image.color = hoverColor;
+            //GameObject.FindWithTag("coin_button").SendMessage("PlayAnimation");
         }
         else
         {
             _image.color = normalColor;
+            //GameObject.FindWithTag("coin_button").SendMessage("StopAnimation");
         }
         _image.transform.localScale = _initScale;
     }

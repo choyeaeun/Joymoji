@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Joymoji/Scene/2_choose.unity
     guid: d644c01b08be48d43a84b664ed0c4a58
   - enabled: 1
+    path: Assets/Joymoji/Scene/3_A_sticker.unity
+    guid: 17541b1cf86cc4b4792c50f80a4c93d4
+  - enabled: 1
     path: Assets/Joymoji/Scene/3_B_character.unity
     guid: 82b73f3950b32214a85d0c0406f2e9fc
   - enabled: 1
@@ -23,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joymoji/Scene/BodyScene.unity
     guid: 72b85d49d4234b24fad18c8df806644d
+  - enabled: 1
+    path: Assets/Joymoji/Scene/StickerScene.unity
+    guid: 4d4769c76fafc954ea2069d054f55cbb
   m_configObjects: {}

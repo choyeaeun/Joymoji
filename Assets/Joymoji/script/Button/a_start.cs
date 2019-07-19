@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class a_start : MonoBehaviour
 {
     private Button _button;
-    public GameObject coin;
+    public GameObject buttonObj;
 
     // Use this for initialization
     void Start()
@@ -17,9 +17,12 @@ public class a_start : MonoBehaviour
 
         _button.onClick.AddListener(() =>
         {
-            //coin.animation
             SceneManager.LoadScene("2_choose");
         });
     }
-
+    void OnTriggerStay2D(Collider2D col)
+    {
+        buttonObj.GetComponent<Animation>().Play();
+    }
+    
 }
