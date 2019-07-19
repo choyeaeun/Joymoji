@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class b_sticker : MonoBehaviour
 {
     private Button _button1;
-    // Use this for initialization
+    public GameObject buttonObj;
     void Start()
     {
         _button1 = GetComponent<Button>();
@@ -15,5 +15,10 @@ public class b_sticker : MonoBehaviour
         {
             SceneManager.LoadScene("3_A_sticker");
         });
+    }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        buttonObj.GetComponent<Animation>().Play();
     }
 }

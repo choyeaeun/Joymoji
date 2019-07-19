@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Joymoji\mesh\body\objRotate.cs" />
+     <Compile Include="Assets\Joymoji\mesh\coin\coin_animation.cs" />
      <Compile Include="Assets\Joymoji\script\AbstractKinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneManager.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneView.cs" />

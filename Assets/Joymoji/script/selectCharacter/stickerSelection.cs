@@ -51,12 +51,7 @@ public class stickerSelection : MonoBehaviour
         PlayerPrefs.SetInt("StickerSelected", index);
         SceneManager.LoadScene("StickerScene");
     }
-    /*
-    public void LastConfirmButton()
-    {
-        PlayerPrefs.SetInt("CharacterSelected", index);
-        SceneManager.LoadScene("BodyScene");
-    }*/
+   
 
     public void BackBtn()
     {

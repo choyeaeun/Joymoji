@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class b_back : MonoBehaviour
 {
     private Button b_backBtn;
-    // Use this for initialization
+    public GameObject buttonObj;
     void Start()
     {
         b_backBtn = GetComponent<Button>();
@@ -15,5 +15,9 @@ public class b_back : MonoBehaviour
         {
             SceneManager.LoadScene("1_start");
         });
+    }
+    void OnTriggerStay2D(Collider2D col)
+    {
+        buttonObj.GetComponent<Animation>().Play();
     }
 }
