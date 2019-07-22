@@ -53,8 +53,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GetSocialCapture\Scripts\GetSocialCapture.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\GetSocialCapturePreview.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Gif\GeneratorWorker.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Gif\GifEncoder.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Gif\GifFrame.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Gif\LzwEncoder.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Gif\NeuQuant.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Recorder\Recorder.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Recorder\StoreWorker.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\FixedSizeQueue.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\MainThreadExecutor.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\Singleton.cs" />
+     <Compile Include="Assets\GetSocialCapture\Scripts\Test.cs" />
      <Compile Include="Assets\Joymoji\mesh\body\objRotate.cs" />
      <Compile Include="Assets\Joymoji\mesh\coin\coin_animation.cs" />
+     <Compile Include="Assets\Joymoji\mesh\sticker\mona_controller.cs" />
      <Compile Include="Assets\Joymoji\script\AbstractKinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneManager.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneView.cs" />
@@ -65,6 +79,7 @@
      <Compile Include="Assets\Joymoji\script\Button\b_body.cs" />
      <Compile Include="Assets\Joymoji\script\Button\b_sticker.cs" />
      <Compile Include="Assets\Joymoji\script\Button\backto_2_choose.cs" />
+     <Compile Include="Assets\Joymoji\script\Button\backto_e_confirm.cs" />
      <Compile Include="Assets\Joymoji\script\Button\bodyEmo.cs" />
      <Compile Include="Assets\Joymoji\script\Button\ButtonExample.cs" />
      <Compile Include="Assets\Joymoji\script\Button\ButtonTest.cs" />
@@ -77,14 +92,15 @@
      <Compile Include="Assets\Joymoji\script\Button\UIBtn.cs" />
      <Compile Include="Assets\Joymoji\script\controller\testController.cs" />
      <Compile Include="Assets\Joymoji\script\controller\wing_controller.cs" />
+     <Compile Include="Assets\Joymoji\script\DestroyObject.cs" />
      <Compile Include="Assets\Joymoji\script\genericmanController.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUIWaitCursor.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUIWaitOverButton.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\characterSelection.cs" />
+     <Compile Include="Assets\Joymoji\script\selectCharacter\DontDestroy.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\mapSelection.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\stickerSelection.cs" />
-     <Compile Include="Assets\Joymoji\sticker\mona_controller.cs" />
      <Compile Include="Assets\KinectUIModule\Scripts\KinectInputModule.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceView.cs" />
