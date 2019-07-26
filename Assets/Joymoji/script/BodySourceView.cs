@@ -41,6 +41,11 @@ public class BodySourceView : MonoBehaviour
         { Kinect.JointType.SpineShoulder, Kinect.JointType.Neck },
         { Kinect.JointType.Neck, Kinect.JointType.Head },
     };
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
     void Start()
     {
         _BodyManager = FindObjectOfType<BodySourceManager>();
@@ -96,7 +101,7 @@ public class BodySourceView : MonoBehaviour
             {
                 if (!_Bodies.ContainsKey(body.TrackingId))
                 {
-                    _Bodies[body.TrackingId] = CreateBodyObject(body.TrackingId);
+                    //_Bodies[body.TrackingId] = CreateBodyObject(body.TrackingId);
                 }
                 // Tracking for UI Component
                 if (body!= null)
@@ -106,7 +111,7 @@ public class BodySourceView : MonoBehaviour
                 else {
                     Debug.Log("There is no body!\n");
                 }
-                RefreshBodyObject(body, _Bodies[body.TrackingId]);
+                //RefreshBodyObject(body, _Bodies[body.TrackingId]);
             }
 
         }
@@ -124,7 +129,7 @@ public class BodySourceView : MonoBehaviour
             lr.SetVertexCount(2);
             lr.material = BoneMaterial;
             lr.SetWidth(0.05f, 0.05f);
-
+            
             jointObj.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             jointObj.name = jt.ToString();
             jointObj.transform.parent = body.transform;
@@ -147,7 +152,7 @@ public class BodySourceView : MonoBehaviour
 
             Transform jointObj = bodyObject.transform.Find(jt.ToString());
             jointObj.localPosition = GetVector3FromJoint(sourceJoint);
-
+            
             LineRenderer lr = jointObj.GetComponent<LineRenderer>();
             if (targetJoint.HasValue)
             {
