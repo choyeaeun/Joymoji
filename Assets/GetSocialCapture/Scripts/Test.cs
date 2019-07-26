@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
 using GetSocialSdk.Capture.Scripts;
-//using GetSocialSdk.Core;
-//using GetSocialSdk.Ui;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
@@ -13,36 +11,40 @@ public class Test : MonoBehaviour
     private GetSocialCapture capture;
     public GetSocialCapturePreview capturePreview;
 
-    public int timeLeft = 6;
+    public int timeLeft = 7;
     public int gifTime = 5;
     public Text countdownText;
-    private GameObject BtnObj;
+    private GameObject[] BtnObj;
 
     private bool startBool = false;
 
     void Awake()
     {
         capture = GetComponent<GetSocialCapture>();
+        DontDestroyOnLoad(this.gameObject);
     }
     
     void Start()
     {
         countdownText.text = " ";
-        BtnObj = GameObject.FindWithTag("UI");
+        BtnObj = GameObject.FindGameObjectsWithTag("UI");
     }
 
     public void StartTimer()
     {
         StartCoroutine("LoseTime");
-        //timeLeft = 5;
+
+        if (BtnObj != null)
+        {
+            foreach (GameObject go in BtnObj)
+                go.SetActive(false);
+        }
     }
 
     public void StartCapture()
     {
         StartCoroutine("Time");
         capture.StartCapture();
-        BtnObj.setActive(false);
-        //gifTime += 5;
     }
     public void ShareResult()
     {
@@ -76,15 +78,13 @@ public class Test : MonoBehaviour
             StopCoroutine("Time");
             gifTime = 5;
             capture.StopCapture();
-            capturePreview.Play();
-            BtnObj.setActive(true);
+            SceneManager.LoadScene("ShareScene");
         }
-        if (Input.GetMouseButtonDown(1))
-        {
+        //다음 씬으로 넘어가서 ShareResult를 쓰면 Null이어서 저장이 안 됨. 여기서는 DontDestroy때문에 다음씬에서도 저장됨.
+        if (Input.GetMouseButtonDown(0))
             ShareResult();
-        }
     }
-
+    
     IEnumerator LoseTime()
     {
         while (true)

@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GetSocialCapture\Scripts\CaptureGif.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\GetSocialCapture.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\GetSocialCapturePreview.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Gif\GeneratorWorker.cs" />
@@ -90,6 +91,7 @@
      <Compile Include="Assets\Joymoji\script\Button\e_back.cs" />
      <Compile Include="Assets\Joymoji\script\Button\e_confirm.cs" />
      <Compile Include="Assets\Joymoji\script\Button\UIBtn.cs" />
+     <Compile Include="Assets\Joymoji\script\controller\DONTdestroyKinect.cs" />
      <Compile Include="Assets\Joymoji\script\controller\testController.cs" />
      <Compile Include="Assets\Joymoji\script\controller\wing_controller.cs" />
      <Compile Include="Assets\Joymoji\script\DestroyObject.cs" />

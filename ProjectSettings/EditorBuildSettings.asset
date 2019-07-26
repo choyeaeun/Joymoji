@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joymoji/Scene/StickerScene.unity
     guid: 4d4769c76fafc954ea2069d054f55cbb
+  - enabled: 1
+    path: Assets/Joymoji/Scene/ShareScene.unity
+    guid: d0ce254b39ff1a54e87e8b85db602c73
   m_configObjects: {}

@@ -86,6 +86,9 @@ namespace GetSocialSdk.Capture.Scripts
             _rawImage = GetComponent<RawImage>();
             _framesToPlay = new List<Texture2D>();
             _play = false;
+
+            //////////////
+            DontDestroyOnLoad(this.gameObject);
         }
         
         private void Start()

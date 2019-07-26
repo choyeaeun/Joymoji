@@ -14,6 +14,6 @@ public class DestroyObject : MonoBehaviour
     // Update is called once per frame
     void OnDestroy()
     {
-        GameObject.Destroy(GameObject.Find("Kinect"));
+        //GameObject.Destroy(GameObject.Find("Kinect"));
     }
 }
