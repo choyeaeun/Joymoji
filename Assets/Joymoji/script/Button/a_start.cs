@@ -19,6 +19,7 @@ public class a_start : MonoBehaviour
         {
             SceneManager.LoadScene("2_choose");
         });
+
     }
     void OnTriggerStay2D(Collider2D col)
     {
