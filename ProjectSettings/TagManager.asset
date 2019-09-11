@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - UI
+  - coin_button
+  - FileExist
+  - ImagePlayer
+  - MoviePlayer
+  - QRcode
   layers:
   - Default
   - TransparentFX
