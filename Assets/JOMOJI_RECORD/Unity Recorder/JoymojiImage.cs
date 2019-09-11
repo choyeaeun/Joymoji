@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#if UNITY_EDITOR
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -12,17 +13,14 @@ public class JoymojiImage : MonoBehaviour
 {
 
     RecorderController Im_RecorderController;
-    public int timeLeft = 7;
-    public int MovieTime = 5;
-    public Text countdownText;
-    private bool startBool = false;
 
-    // void OnMouseEnter()
-    // void OnTriggerStay2D(Collider2D col)
-    void Start()
+    //private bool startBool = false;
+    //string param = "MoviePlayer";
+    private float time =1f;
+
+    void Awake() //Awake로 초기화 하는게 더 good
     {
-        Debug.Log("cliclk");
-      
+        
         var controllerSettings = ScriptableObject.CreateInstance<RecorderControllerSettings>();
         Im_RecorderController = new RecorderController(controllerSettings);
 
@@ -30,22 +28,24 @@ public class JoymojiImage : MonoBehaviour
 
         // Image Sequence
         var imageRecorder = ScriptableObject.CreateInstance<ImageRecorderSettings>();
-        imageRecorder.name = "My Image Recorder";
+        imageRecorder.name = "My Image";
         imageRecorder.enabled = true;
 
         imageRecorder.outputFormat = ImageRecorderOutputFormat.PNG;
         imageRecorder.captureAlpha = true;
 
-        //imageRecorder.outputFile = mediaOutputFolder + "/image_" + DefaultWildcard.Frame + "_" + DefaultWildcard.Take;
-        imageRecorder.outputFile = mediaOutputFolder + "/image_"  + "_" + DefaultWildcard.Take;
+       // imageRecorder.outputFile = mediaOutputFolder + "/image_" + DefaultWildcard.Frame + "_" + DefaultWildcard.Take;
+         imageRecorder.outputFile = mediaOutputFolder + "/image_" + "_" + DefaultWildcard.Take;
 
         imageRecorder.imageInputSettings = new CameraInputSettings
         {
             source = ImageSource.MainCamera,
             outputWidth = 1920,
             outputHeight = 1080,
-            captureUI = true
+             captureUI = true
         };
+
+     
 
         // Setup Recording
         controllerSettings.AddRecorderSettings(imageRecorder);
@@ -53,82 +53,51 @@ public class JoymojiImage : MonoBehaviour
         controllerSettings.SetRecordModeToManual();
         controllerSettings.frameRate = 30.0f;
 
-        Options.verboseMode = false;
-       // Im_RecorderController.StartRecording();
-
+       Options.verboseMode = false;
+    
     }
 
-
-
-    void Update()
+    IEnumerator Timer()
     {
-        if ((timeLeft <= 5) && (timeLeft > 0))
-            countdownText.text = ("" + timeLeft);
-
-        if (timeLeft == 0)
+        while (true)
         {
-            countdownText.text = " ";
-            StopCoroutine("LoseTime");
-            startBool = true;
-            if (startBool == true)
+            yield return new WaitForSeconds(1);
+
+            if (time > 0)
             {
-                Debug.Log("start capture call");
-                StartCapture();
-                startBool = false;
-                timeLeft = 6;
+                time--;
+                Debug.Log(time);
+
             }
+            else
+            {
+                gameObject.SendMessage("StopCapture");
+            }
+
         }
-
-        if (MovieTime == 0)
-        {
-            StopCoroutine("Time");
-            MovieTime = 5;
-            //capture.StopCapture();
-            Im_RecorderController.StopRecording();
-            //레코딩 중지
-            SceneManager.LoadScene("ShareScene");
-        }
-        //다음 씬으로 넘어가서 ShareResult를 쓰면 Null이어서 저장이 안 됨. 여기서는 DontDestroy때문에 다음씬에서도 저장됨.
-        //if (Input.GetMouseButtonDown(0))
-        //ShareResult();
-    }
-
-
-
-    public void StartTimer()
-    {
-        StartCoroutine("LoseTime");
 
     }
 
     public void StartCapture()
     {
-        Debug.Log("start capture play");
-        Im_RecorderController.StartRecording();   //레코딩 시작
-        StartCoroutine("Time");
-        //capture.StartCapture();
+        StartCoroutine(Timer());
+        Im_RecorderController.StartRecording();
 
-
+        Debug.Log("이미지 startcapture");
+       
 
     }
 
-    IEnumerator LoseTime()
+    void StopCapture()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(1);
-            timeLeft--;
-        }
-    }
-    IEnumerator Time()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1);
-            MovieTime--;
-        }
+        Im_RecorderController.StopRecording();
+        Debug.Log("이미지 찍히고 stoprecord");
+        SceneManager.LoadScene("ShareScene");
+
     }
 
 
+    
 
 }
+#endif

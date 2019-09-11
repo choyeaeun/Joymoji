@@ -71,6 +71,8 @@
      <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\JoymojiImage.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\JoymojiImagePlayer.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\JoymojiMoviePlayer.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\PlayerControl.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\ShareUploadNext.cs" />
      <Compile Include="Assets\Joymoji\mesh\body\objRotate.cs" />
      <Compile Include="Assets\Joymoji\mesh\coin\coin_animation.cs" />
      <Compile Include="Assets\Joymoji\mesh\sticker\mona_controller.cs" />
@@ -107,6 +109,10 @@
      <Compile Include="Assets\Joymoji\script\selectCharacter\DontDestroy.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\mapSelection.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\stickerSelection.cs" />
+     <Compile Include="Assets\JOYMOJI_SNS\JoyHomeUploadAvi.cs" />
+     <Compile Include="Assets\JOYMOJI_SNS\JoyHomeUploadGIF.cs" />
+     <Compile Include="Assets\JOYMOJI_SNS\JoyHomeUploadImg.cs" />
+     <Compile Include="Assets\JOYMOJI_SNS\JoymojiQRcode.cs" />
      <Compile Include="Assets\KinectUIModule\Scripts\KinectInputModule.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceManager.cs" />
      <Compile Include="Assets\KinectView\Scripts\ColorSourceView.cs" />
