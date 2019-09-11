@@ -88,6 +88,6 @@ public class mona_controller : MonoBehaviour
 
     private static Vector3 GetVector3FromJoint(Kinect.Joint joint)
     {
-        return new Vector3(joint.Position.X * 5, joint.Position.Y * 5, (joint.Position.Z * 2));
+        return new Vector3(joint.Position.X * 10, (joint.Position.Y * 10)-14, (joint.Position.Z * 2));
     }
 }

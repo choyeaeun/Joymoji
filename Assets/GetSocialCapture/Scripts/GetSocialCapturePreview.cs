@@ -42,7 +42,16 @@ namespace GetSocialSdk.Capture.Scripts
         {
             if (!_previewInitialized)
             {
-                Init();
+                try
+                {
+                    Init();
+                    gameObject.SetActive(true);
+                }
+                catch (System.Exception e)
+                {
+                    Debug.Log(e);
+                    gameObject.SetActive(false);
+                }
             }
             if (!gameObject.activeSelf)
             {
@@ -88,12 +97,21 @@ namespace GetSocialSdk.Capture.Scripts
             _play = false;
 
             //////////////
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
         }
         
         private void Start()
         {
-            Init();
+            try
+            {
+                Init();
+            }
+            catch(System.Exception e)
+            {
+                Debug.Log(e);
+                gameObject.SetActive(false);
+            }
+            
             if (_framesToPlay.Count == 0)
             {
                 _play = false;

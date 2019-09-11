@@ -8,12 +8,12 @@ public class DestroyObject : MonoBehaviour
     void Start()
     {
         GameObject.Destroy(GameObject.Find("DefaultThing"));
-        //GameObject.Destroy(GameObject.Find("Kinect"));
+        //GameObject.Find("DefaultThing").SetActive(false);
     }
 
     // Update is called once per frame
     void OnDestroy()
     {
-        //GameObject.Destroy(GameObject.Find("Kinect"));
+        //GameObject.Find("DefaultThing").SetActive(true);
     }
 }

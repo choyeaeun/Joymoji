@@ -96,6 +96,7 @@
      <Compile Include="Assets\Joymoji\script\Button\d_back.cs" />
      <Compile Include="Assets\Joymoji\script\Button\e_back.cs" />
      <Compile Include="Assets\Joymoji\script\Button\e_confirm.cs" />
+     <Compile Include="Assets\Joymoji\script\Button\goto_home.cs" />
      <Compile Include="Assets\Joymoji\script\Button\UIBtn.cs" />
      <Compile Include="Assets\Joymoji\script\controller\DONTdestroyKinect.cs" />
      <Compile Include="Assets\Joymoji\script\controller\testController.cs" />

@@ -26,7 +26,7 @@ public class Test : MonoBehaviour
     
     void Start()
     {
-        countdownText.text = " ";
+        countdownText.text = "         ";
         BtnObj = GameObject.FindGameObjectsWithTag("UI");
     }
 
@@ -57,11 +57,11 @@ public class Test : MonoBehaviour
     }
     void Update()
     {
-        if((timeLeft <= 5)&&(timeLeft > 0))
-            countdownText.text = ("" + timeLeft);
-
-        if (timeLeft == 0)
+        if ((timeLeft <= 5) && (timeLeft > 0))
         {
+            countdownText.text = ("" + timeLeft);
+        }
+        else if (timeLeft == 0){
             countdownText.text = " ";
             StopCoroutine("LoseTime");
             startBool = true;
@@ -73,16 +73,19 @@ public class Test : MonoBehaviour
                 timeLeft = 6;
             }
         }
+        else
+        {
+            countdownText.text = " ";
+        }
         if (gifTime == 0)
         {
             StopCoroutine("Time");
             gifTime = 5;
             capture.StopCapture();
-            SceneManager.LoadScene("ShareScene");
-        }
-        //다음 씬으로 넘어가서 ShareResult를 쓰면 Null이어서 저장이 안 됨. 여기서는 DontDestroy때문에 다음씬에서도 저장됨.
-        if (Input.GetMouseButtonDown(0))
             ShareResult();
+            SceneManager.LoadScene("ShareScene_gif");
+        }
+            
     }
     
     IEnumerator LoseTime()

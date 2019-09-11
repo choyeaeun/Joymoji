@@ -7,6 +7,7 @@ using UnityEditor.Recorder;
 using UnityEditor.Recorder.Input;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
 
 
 public class JoymojiImage : MonoBehaviour
@@ -17,6 +18,9 @@ public class JoymojiImage : MonoBehaviour
     //private bool startBool = false;
     //string param = "MoviePlayer";
     private float time =1f;
+    public Text countdownText;
+    private int timeLeft = 7;
+    private GameObject[] BtnObj;
 
     void Awake() //Awake로 초기화 하는게 더 good
     {
@@ -57,8 +61,52 @@ public class JoymojiImage : MonoBehaviour
     
     }
 
-    IEnumerator Timer()
+    void Start()
     {
+            //countdownText.SetActive(true);
+            countdownText.text = " ";
+            BtnObj = GameObject.FindGameObjectsWithTag("UI");
+    }
+
+    public void StartTimer()
+    {
+        StartCoroutine("LoseTime");
+
+        if (BtnObj != null)
+        {
+            foreach (GameObject go in BtnObj)
+                go.SetActive(false);
+        }
+    }
+
+    void Update()
+    {
+        if ((timeLeft <= 5) && (timeLeft > 0))
+        {
+            countdownText.text = ("" + timeLeft);
+        }
+        else if (timeLeft == 0)
+        {
+            countdownText.text = " ";
+            StopCoroutine("LoseTime");
+            StartCapture();
+        }
+        else
+        {
+            //countdownText.SetActive(false);
+        }
+    }
+
+    IEnumerator LoseTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            timeLeft--;
+        }
+    }
+    
+    IEnumerator Timer(){
         while (true)
         {
             yield return new WaitForSeconds(1);

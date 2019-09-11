@@ -14,10 +14,12 @@ public class JomojiRecord : MonoBehaviour
 
     RecorderController m_RecorderController;
    
-
-    public Text timeText;
+    
     private float time = 5f;
-  
+    public int timeLeft = 7;
+    public Text countdownText;
+    private GameObject[] BtnObj;
+
 
     void Awake()
     {
@@ -65,9 +67,51 @@ public class JomojiRecord : MonoBehaviour
        // m_RecorderController.StartRecording();
 
     }
-    
 
-  
+    void Start()
+    {
+        //countdownText.SetActive(true);
+        countdownText.text = " ";
+        BtnObj = GameObject.FindGameObjectsWithTag("UI");
+    }
+
+    public void StartTimer()
+    {
+        StartCoroutine("LoseTime");
+
+        if (BtnObj != null)
+        {
+            foreach (GameObject go in BtnObj)
+                go.SetActive(false);
+        }
+    }
+    void Update()
+    {
+        if ((timeLeft <= 5) && (timeLeft > 0))
+        {
+            countdownText.text = ("" + timeLeft);
+        }
+        else if (timeLeft == 0)
+        {
+            countdownText.text = " ";
+            StopCoroutine("LoseTime");
+            StartCapture();
+        }
+        else
+        {
+            //countdownText.SetActive(false);
+        }
+    }
+
+    IEnumerator LoseTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            timeLeft--;
+        }
+    }
+
     IEnumerator Timer()
     {
         while (true)

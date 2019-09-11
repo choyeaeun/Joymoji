@@ -88,6 +88,6 @@ public class wing_controller : MonoBehaviour
 
     private static Vector3 GetVector3FromJoint(Kinect.Joint joint)
     {
-        return new Vector3(joint.Position.X * 10, joint.Position.Y * 10, joint.Position.Z + 25);
+        return new Vector3(joint.Position.X * 10, (joint.Position.Y * 10)-7, (joint.Position.Z * -3)+20);
     }
 }
