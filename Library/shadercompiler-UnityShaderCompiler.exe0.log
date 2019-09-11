@@ -8,6 +8,7 @@ Cmd: preprocess
   insize=1602 outsize=493 ok=1
 Cmd: preprocess
   insize=2378 outsize=307 ok=1
+<<<<<<< HEAD
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -77,4 +78,6 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+=======
+>>>>>>> 84ed4cf3238d0585a652bf78f164feb6d95e3caa
 Cmd: initializeCompiler
