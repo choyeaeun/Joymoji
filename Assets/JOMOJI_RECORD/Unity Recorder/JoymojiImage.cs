@@ -19,7 +19,7 @@ public class JoymojiImage : MonoBehaviour
     //string param = "MoviePlayer";
     private float time =1f;
     public Text countdownText;
-    private int timeLeft = 7;
+    private int timeLeft = 6;
     private GameObject[] BtnObj;
 
     void Awake() //Awake로 초기화 하는게 더 good

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Joymoji/Scene/StickerScene.unity
+- path: Assets/Joymoji/Scene/ShareScene.unity
   isLoaded: 1
   isActive: 1
