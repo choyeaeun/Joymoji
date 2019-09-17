@@ -21,7 +21,7 @@ public class JoyHomeUploadImg : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        byte[] fileimage = File.ReadAllBytes("C:/Users/DS/Desktop/GIT_3_Backup/JoymojiImage/image__001.png"); 
+        byte[] fileimage = File.ReadAllBytes("C:/Users/DS/Desktop/GITHUB_4/JoymojiImage/image__001.png"); 
         int width = Screen.width;
         int height = Screen.height;
         Texture2D tex = new Texture2D(width, height, TextureFormat.RGB24, false);
@@ -63,8 +63,8 @@ public class JoyHomeUploadImg : MonoBehaviour
             Debug.Log(results);
            
             GameObject.FindWithTag("QRcode").SendMessage("QRcodeTexture", results); //QR코드 texture띄우는 곳에 sendmessage
+            GameObject.FindWithTag("ImagePlayer").SendMessage("imgInit"); //생성된 이미지 파일 삭제 sendmessage
 
-           
 
         }
     }

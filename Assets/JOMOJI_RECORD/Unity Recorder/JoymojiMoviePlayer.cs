@@ -62,7 +62,7 @@ public class JoymojiMoviePlayer : MonoBehaviour
         //gameObject.SetActive(false); //sendmessage로 추가부분 0906
         try
         {
-            System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_3/JoymojiMovie/MOVIE_001.mp4");
+            System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_4/JoymojiMovie/MOVIE_001.mp4");
         }
 
         catch (FileNotFoundException fe)
