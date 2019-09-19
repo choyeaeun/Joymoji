@@ -19,7 +19,7 @@ public class JoymojiImagePlayer : MonoBehaviour
             
           
 
-            byte[] byteArray = File.ReadAllBytes(@"C:/Users/DS/Desktop/GITHUB_3/JoymojiImage/image__001.png" );
+            byte[] byteArray = File.ReadAllBytes(@"C:/Users/DS/Desktop/GITHUB_4/JoymojiImage/image__001.png" );
             //GameObject.FindWithTag("FileExist").SendMessage("FileExist", 0); //PlayerControl.cs
 
             Texture2D sampleTexture = new Texture2D(2, 2);
@@ -45,13 +45,15 @@ public class JoymojiImagePlayer : MonoBehaviour
 
     }
 
+   
 
-    void imgInitImg()
+    void imgInit()
     {
         //gameObject.SetActive(false); //sendmessage추가 부분 0906
         try
         {
-            System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_3/JoymojiImage/image__001.png");
+            gameObject.SetActive(false);
+            System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_4/JoymojiImage/image__001.png");
         }
 
         catch (FileNotFoundException fe)

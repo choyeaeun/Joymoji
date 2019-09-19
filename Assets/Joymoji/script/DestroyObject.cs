@@ -8,6 +8,7 @@ public class DestroyObject : MonoBehaviour
     void Start()
     {
         GameObject.Destroy(GameObject.Find("DefaultThing"));
+       // GameObject.Destroy(GameObject.Find("test"));
         //GameObject.Find("DefaultThing").SetActive(false);
     }
 

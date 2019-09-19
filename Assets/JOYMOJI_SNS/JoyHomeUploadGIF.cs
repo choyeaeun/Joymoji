@@ -8,16 +8,20 @@ public class JoyHomeUploadGIF : MonoBehaviour
 {
     string JoyHomeAddress = "http://15.164.204.212:5252/upload";
     string realtime = null; //시간
+    string gifFileName = null;
 
-    /* public void sendToHome()
+    public void sendToHome()
      {
-         StartCoroutine(UploadPNG());
-     }*/
 
-    void OnMouseDown()
+        // Debug.Log(Path.GetFileName("C:/ Users / DS / Desktop / GITHUB_4 / Assets / gifresult "));
+        
+         StartCoroutine(UploadGIF());
+     }
+
+   /* void OnMouseDown()
     {
         StartCoroutine(UploadGIF());
-    }
+    }*/
 
 
 
@@ -28,9 +32,10 @@ public class JoyHomeUploadGIF : MonoBehaviour
         /// 여기가 추가 부분 downloadhandler 쓰기위한 텍스쳐
         /// </summary>
         Texture2D sampleTexture = new Texture2D(2, 2);
-      ////
+        ////
 
-        byte[] fileGIF = File.ReadAllBytes("C:/Users/DS/Desktop/GIT_3_Backup/Assets/gifresult/test.gif");
+        //File.GetCreationTime(String)
+        byte[] fileGIF = File.ReadAllBytes("C:/Users/DS/Desktop/GITHUB_4/Assets/gifresult/test.gif"); //file명 수정 
         System.DateTime time = System.DateTime.Now; //시간
         realtime = time.ToString("hh/mm/ss"); //시간
 
@@ -53,27 +58,14 @@ public class JoyHomeUploadGIF : MonoBehaviour
             Debug.Log("Finished Uploading GIF");
             //////////////
             byte[] results = www.downloadHandler.data; //여기서 HTTP한테 받아옴 result넘겨
-            Debug.Log(results);
-            //bool isLoaded = sampleTexture.LoadImage(results);
-            // Renderer renderer = GetComponent<Renderer>();
+
             GameObject.FindWithTag("QRcode").SendMessage("QRcodeTexture", results); //QR코드 texture띄우는 곳에 sendmessage
-
-            /*if (isLoaded)
-            {
-               Debug.Log("큐알코드:success");
-               renderer.material.mainTexture = sampleTexture;
-                GameObjtect.FindWithTag("QRcode").SendMessage("QRcodeTexture", results);  //QR코드 texture띄우는 곳에 sendmessage
-
-            }
-
-            else
-            {
-                Debug.Log("큐알코드:fail");
-
-            }*/
-            //sampleTexture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+            GameObject.FindWithTag("GifPlayer").SendMessage("gifInit"); //생성된 이미지 파일 삭제 sendmessage
 
 
         }
+
+  
+
     }
 }

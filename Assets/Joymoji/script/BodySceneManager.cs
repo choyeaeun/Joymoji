@@ -16,7 +16,7 @@ public class BodySceneManager : MonoBehaviour
 
     void Start()
     {
-        GameObject.Destroy(GameObject.Find("Kinect"));
+        //GameObject.Destroy(GameObject.Find("Kinect"));//190919 BodysourceManager랑 BodyScenemanager랑 둘다 겹침
 
         _Sensor = KinectSensor.GetDefault();
 

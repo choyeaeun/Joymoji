@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Joymoji/Scene/ShareScene.unity
+=======
+- path: Assets/Joymoji/Scene/1_start.unity
+>>>>>>> ca53579030cd12133835eaf9eef31b9b0d35a4ae
   isLoaded: 1
   isActive: 1

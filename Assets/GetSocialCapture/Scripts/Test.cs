@@ -6,6 +6,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class Test : MonoBehaviour
 {
     private GetSocialCapture capture;
@@ -21,13 +22,15 @@ public class Test : MonoBehaviour
     void Awake()
     {
         capture = GetComponent<GetSocialCapture>();
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
+
     }
     
     void Start()
     {
         countdownText.text = "         ";
         BtnObj = GameObject.FindGameObjectsWithTag("UI");
+        //countdownText = GameObject.Find("CountDownTxt").GetComponent<Text>();
     }
 
     public void StartTimer()
@@ -45,6 +48,8 @@ public class Test : MonoBehaviour
     {
         StartCoroutine("Time");
         capture.StartCapture();
+
+        DontDestroyOnLoad(this.gameObject);//
     }
     public void ShareResult()
     {
@@ -75,7 +80,7 @@ public class Test : MonoBehaviour
         }
         else
         {
-            countdownText.text = " ";
+            countdownText.text = "  ";
         }
         if (gifTime == 0)
         {
@@ -103,5 +108,10 @@ public class Test : MonoBehaviour
             yield return new WaitForSeconds(1);
             gifTime--;
         }
+    }
+
+    void TestInit()
+    {
+        gameObject.SetActive(false);
     }
 }

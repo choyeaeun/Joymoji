@@ -14,6 +14,10 @@ public class goto_home : MonoBehaviour
         homeBtn.onClick.AddListener(() =>
         {
             SceneManager.LoadScene("1_start");
+            GameObject.FindWithTag("test").SendMessage("TestInit"); //test nullreference 없애려고 setfalse함
         });
+
+       
     }
+
 }

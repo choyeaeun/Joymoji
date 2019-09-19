@@ -7,10 +7,10 @@ public class ShareUploadNext : MonoBehaviour
 {
     public void shareUploadButton()
     {
-        GameObject.FindWithTag("MoviePlayer").SendMessage("imgInit");
-        GameObject.FindWithTag("ImagePlayer").SendMessage("imgInitImg");
+       GameObject.FindWithTag("MoviePlayer").SendMessage("videoInit");
+       GameObject.FindWithTag("ImagePlayer").SendMessage("imgInit");
 
-        SceneManager.LoadScene("S_QRcodeScene");
+       // SceneManager.LoadScene("S_QRcodeScene");
     }
 
 

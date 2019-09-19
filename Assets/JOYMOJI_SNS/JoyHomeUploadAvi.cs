@@ -10,25 +10,30 @@ public class JoyHomeUploadAvi : MonoBehaviour
     string realtime = null; //시간
     string JoyHomeLanguage = "ko";
     string textToDisplay = "Joymoji";
-   
+
 
     /* public void sendToHome()
      {
          StartCoroutine(UploadPNG());
      }*/
 
-    void OnMouseDown()
+    /*void OnMouseDown()
     {
         StartCoroutine(UploadAVI());
-    }
+    }*///190917
 
+    public void SendToHome()
+    {
+        StartCoroutine(UploadAVI());
+    } //190917추가
 
 
     IEnumerator UploadAVI()
     {
         yield return new WaitForEndOfFrame();
 
-        byte[] filedata = File.ReadAllBytes("/Users/DS/Desktop/GIT_3_Backup/JoymojiMovie/MOVIE_001.mp4");
+       
+        byte[] filedata = File.ReadAllBytes("/Users/DS/Desktop/GITHUB_4/JoymojiMovie/MOVIE_001.mp4"); ////190717파일경로변경
 
         System.DateTime time = System.DateTime.Now; //시간
         realtime = time.ToString("hh/mm/ss"); //시간
@@ -47,6 +52,16 @@ public class JoyHomeUploadAvi : MonoBehaviour
         else
         {
             Debug.Log("Finished Uploading mp4");
+            byte[] results = www.downloadHandler.data; //여기서 HTTP한테 받아옴 result넘겨
+
+            GameObject.FindWithTag("QRcode").SendMessage("QRcodeTexture", results); //QR코드 texture띄우는 곳에 sendmessage//190717추가
+            GameObject.FindWithTag("MoviePlayer").SendMessage("videoInit"); //생성된 이미지 파일 삭제 sendmessage//190717추가
         }
+
+
+
+
+
+
     }
 }

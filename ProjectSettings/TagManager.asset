@@ -10,6 +10,8 @@ TagManager:
   - ImagePlayer
   - MoviePlayer
   - QRcode
+  - GifPlayer
+  - test
   layers:
   - Default
   - TransparentFX
