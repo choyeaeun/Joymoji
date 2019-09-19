@@ -148,7 +148,7 @@ public class JoymojiImage : MonoBehaviour
     {
         Im_RecorderController.StopRecording();
         Debug.Log("이미지 찍히고 stopCapture");
-        SceneManager.LoadScene("ShareScene");
+        SceneManager.LoadScene("ShareScene_img");
 
     }
 

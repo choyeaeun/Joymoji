@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 95746678}
   m_Layer: 0
   m_Name: test
-  m_TagString: Untagged
+  m_TagString: test
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,7 +698,7 @@ PrefabInstance:
     - target: {fileID: 5741175460965880601, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_Name
-      value: selectBtn
+      value: selectBtn_gif
       objectReference: {fileID: 0}
     - target: {fileID: 5741175460965880601, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}

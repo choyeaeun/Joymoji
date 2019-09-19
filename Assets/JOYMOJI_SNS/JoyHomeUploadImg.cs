@@ -60,12 +60,12 @@ public class JoyHomeUploadImg : MonoBehaviour
             Debug.Log("Finished Uploading Img");
             //////////////
             byte[] results = www.downloadHandler.data; //여기서 HTTP한테 받아옴 result넘겨
-            Debug.Log(results);
-           
+            
             GameObject.FindWithTag("QRcode").SendMessage("QRcodeTexture", results); //QR코드 texture띄우는 곳에 sendmessage
             GameObject.FindWithTag("ImagePlayer").SendMessage("imgInit"); //생성된 이미지 파일 삭제 sendmessage
 
+        } 
 
-        }
+        
     }
 }

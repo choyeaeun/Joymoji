@@ -17,14 +17,14 @@ public class JoymojiMoviePlayer : MonoBehaviour
 
         try
         {
-            if (System.IO.File.Exists("C:/Users/DS/Desktop/GITHUB_3/JoymojiMovie/MOVIE_001.mp4"))
+            if (System.IO.File.Exists("C:/Users/DS/Desktop/GITHUB_4/JoymojiMovie/MOVIE_001.mp4"))
             {
                 var videoPlayer = gameObject.AddComponent<UnityEngine.Video.VideoPlayer>();
                 videoPlayer.playOnAwake = false;
                 Debug.Log("Video File Exist");
                 gameObject.SetActive(true); //###
 
-                videoPlayer.url = "/Users/DS/Desktop/GITHUB_3/JoymojiMovie/MOVIE_001.mp4";
+                videoPlayer.url = "/Users/DS/Desktop/GITHUB_4/JoymojiMovie/MOVIE_001.mp4";
                 FileInfo File = new FileInfo(videoPlayer.url); //file 경로 확인
                                                       //GameObject.FindWithTag("FileExist").SendMessage("FileExist", 1); //PlayerControl.cs
 
@@ -62,6 +62,7 @@ public class JoymojiMoviePlayer : MonoBehaviour
         //gameObject.SetActive(false); //sendmessage로 추가부분 0906
         try
         {
+            gameObject.SetActive(false);
             System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_4/JoymojiMovie/MOVIE_001.mp4");
         }
 

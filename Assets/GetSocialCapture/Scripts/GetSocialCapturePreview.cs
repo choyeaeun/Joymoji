@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using GetSocialSdk.Capture.Scripts.Internal.Recorder;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 namespace GetSocialSdk.Capture.Scripts
 {
@@ -136,5 +137,24 @@ namespace GetSocialSdk.Capture.Scripts
 
         #endregion
 
+        void gifInit()
+        {
+            //gameObject.SetActive(false); //sendmessage추가 부분 0906
+            try
+            {
+                gameObject.SetActive(false);
+                System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_4/Assets/gifresult/test.gif");
+            }
+
+            catch (FileNotFoundException fe)
+            {
+                Debug.Log("지울이미지 없음");
+            }
+        }
+
+
     }
+
+
+
 }
