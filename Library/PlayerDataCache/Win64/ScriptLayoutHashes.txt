@@ -1,16 +1,20 @@
 Win64
 PlayerPath?
-C:/Users/DS/Desktop/Joymoji.exe
+C:/Users/DS/Desktop/GITHUB_4/Joymoji.exe
 SceneListBegin?
 Assets/Joymoji/Scene/1_start.unity
 Assets/Joymoji/Scene/2_choose.unity
 Assets/Joymoji/Scene/3_A_sticker.unity
+Assets/Joymoji/Scene/3_sticker.unity
 Assets/Joymoji/Scene/3_B_character.unity
 Assets/Joymoji/Scene/4_B_background.unity
 Assets/Joymoji/Scene/5_confirm.unity
 Assets/Joymoji/Scene/BodyScene.unity
 Assets/Joymoji/Scene/StickerScene.unity
-Assets/Joymoji/Scene/ShareScene.unity
+Assets/Joymoji/Scene/ShareScene_img.unity
+Assets/Joymoji/Scene/ShareScene_mp4.unity
+Assets/Joymoji/Scene/ShareScene_gif.unity
+Assets/Joymoji/Scene/S_QRcodeScene.unity
 SceneListEnd?
 50bdf48895f06269d80fe1b022c24a56 Assembly-CSharp.dll:.CaptureGif
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.b_sticker
@@ -36,6 +40,7 @@ d2b986769bb3761fe27e82cc86ba4cfb Assembly-CSharp.dll:.KinectUICursor
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MultiSourceManager
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DONTdestroyKinect
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoyHomeUploadAvi
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FollowMouse
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.c_A
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -150,12 +155,15 @@ bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.testController
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.c_back
 2e5b5ea67c3ea60b034c710e9d340c30 Assembly-CSharp.dll:.KinectUIWaitCursor
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.goto_home
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.d_back
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.InfraredSourceManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.backto_2_choose
 5cb7660cc85075531360bccd80d05f27 Assembly-CSharp.dll:.AvatarController
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.coin_animation
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ShareUploadNext
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoyHomeUploadImg
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.b_back
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
@@ -167,7 +175,7 @@ bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.genericmanController
 49101319b21043357cb80c5aba043e1d Unity.Recorder.dll:UnityEngine.Recorder.RecorderBindings
 2ebe25e5804414078fbbd5d7f8778e50 Assembly-CSharp.dll:.BodySourceView
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.mapSelection
-30eb697ec1477263c0491e58213dee45 Assembly-CSharp.dll:.JoymojiImage
+c9087d99e22039528856fbd9eda13258 Assembly-CSharp.dll:.JoymojiImage
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -197,6 +205,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.e_back
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ColorSourceManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoymojiQRcode
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -208,13 +217,15 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 a9490cd5c5ed6abf4be77ae71930f288 Assembly-CSharp.dll:.DepthSourceView
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoyHomeUploadGIF
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.wing_controller
 7fca3f19397333b47742374a79d5b40e Assembly-CSharp.dll:.Test
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.KinectUIWaitOverButton
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlayerControl
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DepthSourceManager
-30eb697ec1477263c0491e58213dee45 Assembly-CSharp.dll:.JomojiRecord
+58d76faa8e602c27cfcbd922f5a4c347 Assembly-CSharp.dll:.JomojiRecord
 9368dcee3f78fc5bd1c9df0d80dd2746 Assembly-CSharp.dll:.ColorSourceView
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient

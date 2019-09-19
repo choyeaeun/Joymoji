@@ -6,43 +6,39 @@ using UnityEngine.Networking;
 
 public class JoymojiQRcode : MonoBehaviour
 {
-    void Start()
-    {
-        
-        //gameObject.SetActive(false);
-        Debug.Log("텍스쳐:false");
-
-    }
-
-
+   
     public void QRcodeTexture(byte[] data)
     {
         //gameObject.SetActive(true);
         
-
-        Debug.Log("텍스쳐:true");
-
+       GameObject plane = GameObject.CreatePrimitive(PrimitiveType.Plane);
+        plane.transform.position = new Vector3(0, 0, 34.6f);
+        plane.transform.localScale = new Vector3(3.0f, 3.0f, 3.0f);
+        plane.transform.localEulerAngles = new Vector3(-90.0f, 0, 0);
+        plane.transform.localRotation = Quaternion.Euler(-90.0f, 0, 0);
+    
         Texture2D sampleTexture = new Texture2D(2, 2);
 
         bool isLoaded = sampleTexture.LoadImage(data);
 
-        Renderer renderer = GetComponent<Renderer>();
+        if (isLoaded)
+        {
+            Debug.Log("data는 들어옴");    
+        }
+
+        //Renderer renderer = GetComponent<Renderer>();
+        Renderer renderer = plane.GetComponent<Renderer>();
+
+
 
         if (isLoaded)
         {
             Debug.Log("큐알코드:success");
             renderer.material.mainTexture = sampleTexture;
-           
+            
         }
 
     }
 
-   
-} 
 
-
-
-
-
-
-   
+}

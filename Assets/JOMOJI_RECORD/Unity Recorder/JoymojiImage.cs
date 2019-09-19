@@ -21,6 +21,7 @@ public class JoymojiImage : MonoBehaviour
     public Text countdownText;
     private int timeLeft = 7;
     private GameObject[] BtnObj;
+    bool call = false;
 
     void Awake() //Awake로 초기화 하는게 더 good
     {
@@ -87,9 +88,15 @@ public class JoymojiImage : MonoBehaviour
         }
         else if (timeLeft == 0)
         {
-            countdownText.text = " ";
-            StopCoroutine("LoseTime");
-            StartCapture();
+           countdownText.text = " ";
+           StopCoroutine("LoseTime");
+            if (call == false)
+            {
+                call = true;
+                StartCapture();
+
+            }
+           
         }
         else
         {
@@ -119,7 +126,8 @@ public class JoymojiImage : MonoBehaviour
             }
             else
             {
-                gameObject.SendMessage("StopCapture");
+                //gameObject.SendMessage("StopCapture");
+                StopCapture();
             }
 
         }
@@ -139,8 +147,8 @@ public class JoymojiImage : MonoBehaviour
     void StopCapture()
     {
         Im_RecorderController.StopRecording();
-        Debug.Log("이미지 찍히고 stoprecord");
-        SceneManager.LoadScene("ShareScene");
+        Debug.Log("이미지 찍히고 stopCapture");
+        SceneManager.LoadScene("ShareScene_img");
 
     }
 

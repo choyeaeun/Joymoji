@@ -188,8 +188,10 @@ namespace GetSocialSdk.Capture.Scripts
         private void InitSession()
         {
             _captureId = Guid.NewGuid().ToString();
-            var fileName = string.Format("result-{0}.gif", _captureId);
-            _resultFilePath = GetResultDirectory() + Path.DirectorySeparatorChar + fileName;
+            //var fileName = string.Format("result-{0}.gif", _captureId);
+            //_resultFilePath = GetResultDirectory() + Path.DirectorySeparatorChar + fileName;
+            var fileName = string.Format("test.gif", _captureId);
+            _resultFilePath = GetResultDirectory() + Path.DirectorySeparatorChar +fileName;
             StoreWorker.Instance.Start(ThreadPriority.BelowNormal, maxCapturedFrames);
         }
         

@@ -49,7 +49,7 @@ public class stickerSelection : MonoBehaviour
     public void ConfirmButton()
     {
         PlayerPrefs.SetInt("StickerSelected", index);
-        SceneManager.LoadScene("StickerScene");
+        SceneManager.LoadScene("3_sticker");
     }
    
 

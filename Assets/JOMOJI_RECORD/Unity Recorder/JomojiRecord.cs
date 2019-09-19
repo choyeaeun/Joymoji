@@ -19,7 +19,7 @@ public class JomojiRecord : MonoBehaviour
     public int timeLeft = 7;
     public Text countdownText;
     private GameObject[] BtnObj;
-
+    bool call = false;
 
     void Awake()
     {
@@ -95,7 +95,13 @@ public class JomojiRecord : MonoBehaviour
         {
             countdownText.text = " ";
             StopCoroutine("LoseTime");
-            StartCapture();
+            if (call == false)
+            {
+                call = true;
+                StartCapture();
+
+            }
+          
         }
         else
         {
@@ -146,7 +152,7 @@ public class JomojiRecord : MonoBehaviour
     {
         m_RecorderController.StopRecording();
         //레코딩 중지
-        SceneManager.LoadScene("ShareScene");
+        SceneManager.LoadScene("ShareScene_mp4");
     }
 
 }
