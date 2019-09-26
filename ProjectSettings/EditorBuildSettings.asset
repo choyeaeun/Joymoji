@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joymoji/Scene/S_QRcodeScene.unity
     guid: 176c513eaf8a8b944bb265ee68faf00a
+  - enabled: 1
+    path: Assets/Joymoji/Scene/howto.unity
+    guid: 965168d1b29240449ac2a28c964956fe
   m_configObjects: {}

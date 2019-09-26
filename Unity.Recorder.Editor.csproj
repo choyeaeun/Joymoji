@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E0D40636-73A7-C473-268E-1EB03EB61D94}</ProjectGuid>
+    <ProjectGuid>{79102241-541D-7201-41DD-F54539BC4BFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Recorder.Editor</AssemblyName>
@@ -53,6 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\JomojiRecord.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\JoymojiImage.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\JoymojiImagePlayer.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\JoymojiMoviePlayer.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\Sources\_RecorderComponent.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\Sources\AspectRatio.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\Editor\Sources\AspectRatioPropertyDrawer.cs" />
@@ -405,8 +409,11 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.WSA.Extensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.WSA.Extensions.dll</HintPath>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
@@ -415,19 +422,19 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Users/DS/Desktop/GITHUB_4/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/GITHUB_5/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/DS/Desktop/GITHUB_4/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/GITHUB_5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/DS/Desktop/GITHUB_4/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/GITHUB_5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/DS/Desktop/GITHUB_4/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/GITHUB_5/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Users/DS/Desktop/GITHUB_4/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>C:/Users/DS/Desktop/GITHUB_5/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -786,7 +793,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Recorder.csproj">
-      <Project>{7E729C4E-522A-1711-6A6D-67A7CA4A51EC}</Project>      <Name>Unity.Recorder</Name>    </ProjectReference>
+      <Project>{DE133F35-35A0-64BC-4B72-715BE9F30D90}</Project>      <Name>Unity.Recorder</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
