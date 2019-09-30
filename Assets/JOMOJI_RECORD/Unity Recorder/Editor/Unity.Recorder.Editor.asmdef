@@ -1,10 +1,17 @@
 {
     "name": "Unity.Recorder.Editor",
     "references": [
-      "Unity.Recorder"
+        "Unity.Recorder"
     ],
+    "optionalUnityReferences": [],
     "includePlatforms": [
-        "Editor"
+        "Editor",
+        "WindowsStandalone32"
     ],
-    "excludePlatforms": []
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
 }

@@ -143,7 +143,7 @@ namespace GetSocialSdk.Capture.Scripts
             try
             {
                 gameObject.SetActive(false);
-                System.IO.File.Delete("C:/Users/DS/Desktop/GITHUB_4/Assets/gifresult/test.gif");
+                System.IO.File.Delete(Application.dataPath + "/gifresult/test.gif");
             }
 
             catch (FileNotFoundException fe)

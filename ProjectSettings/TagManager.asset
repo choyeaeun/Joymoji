@@ -12,6 +12,7 @@ TagManager:
   - QRcode
   - GifPlayer
   - test
+  - gifstate
   layers:
   - Default
   - TransparentFX

@@ -71,6 +71,7 @@ namespace GetSocialSdk.Capture.Scripts
         private string _resultFilePath;
         private float _elapsedTime;
         private Recorder _recorder;
+        private const string _streamingAssets = "StreamingAssets";
 
         private const string GeneratedContentFolderName = "gifresult";
 
@@ -174,10 +175,11 @@ namespace GetSocialSdk.Capture.Scripts
             #if UNITY_EDITOR
                 resultDirPath = Application.dataPath; 
             #else
-                resultDirPath = Application.persistentDataPath; 
+                //resultDirPath = Application.persistentDataPath; 
+                resultDirPath = Application.dataPath; 
             #endif
+            //resultDirPath += Path.DirectorySeparatorChar + _streamingAssets + Path.DirectorySeparatorChar + GeneratedContentFolderName;
             resultDirPath += Path.DirectorySeparatorChar + GeneratedContentFolderName;
-
             if (!Directory.Exists(resultDirPath))
             {
                 Directory.CreateDirectory(resultDirPath);
@@ -192,6 +194,7 @@ namespace GetSocialSdk.Capture.Scripts
             //_resultFilePath = GetResultDirectory() + Path.DirectorySeparatorChar + fileName;
             var fileName = string.Format("test.gif", _captureId);
             _resultFilePath = GetResultDirectory() + Path.DirectorySeparatorChar +fileName;
+            Debug.Log("-----------------------" + _resultFilePath + "-----------------------");
             StoreWorker.Instance.Start(ThreadPriority.BelowNormal, maxCapturedFrames);
         }
         

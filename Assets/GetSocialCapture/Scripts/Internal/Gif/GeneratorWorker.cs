@@ -83,7 +83,7 @@ namespace GetSocialSdk.Capture.Scripts.Internal.Gif
 			}
 			_encoder.Finish();
 			Debug.Log("Gif generation finished, took " + (DateTime.Now - startTimestamp).Milliseconds + " msec");
-
+            
 			if (_onFileSaved != null)
 				_onFileSaved();
 		}
