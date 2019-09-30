@@ -21,7 +21,7 @@ public class JoyHomeUploadImg : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        byte[] fileimage = File.ReadAllBytes("C:/Users/DS/Desktop/GITHUB_4/JoymojiImage/image__001.png"); 
+        byte[] fileimage = File.ReadAllBytes(Application.dataPath + "./JoymojiImage/image__001.png");
         int width = Screen.width;
         int height = Screen.height;
         Texture2D tex = new Texture2D(width, height, TextureFormat.RGB24, false);
@@ -35,18 +35,18 @@ public class JoyHomeUploadImg : MonoBehaviour
         System.DateTime time = System.DateTime.Now; //시간
         realtime = time.ToString("hh/mm/ss"); //시간
         Debug.Log(realtime);
-      
+
 
         List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
         formData.Add(new MultipartFormFileSection("img", bytes, realtime + ".png", "image/png"));
         var www = UnityWebRequest.Post(JoyHomeAddress, formData);
-       //둘다 ok
-     
-      /*
-        WWWForm form = new WWWForm();
-        form.AddBinaryData("img", bytes,"time.png", "image/png");
-        var www = UnityWebRequest.Post("http://15.164.204.212:5252/upload/single", form);
-     */
+        //둘다 ok
+
+        /*
+          WWWForm form = new WWWForm();
+          form.AddBinaryData("img", bytes,"time.png", "image/png");
+          var www = UnityWebRequest.Post("http://15.164.204.212:5252/upload/single", form);
+       */
 
         yield return www.SendWebRequest();
 
@@ -60,12 +60,12 @@ public class JoyHomeUploadImg : MonoBehaviour
             Debug.Log("Finished Uploading Img");
             //////////////
             byte[] results = www.downloadHandler.data; //여기서 HTTP한테 받아옴 result넘겨
-            
+
             GameObject.FindWithTag("QRcode").SendMessage("QRcodeTexture", results); //QR코드 texture띄우는 곳에 sendmessage
             GameObject.FindWithTag("ImagePlayer").SendMessage("imgInit"); //생성된 이미지 파일 삭제 sendmessage
 
-        } 
+        }
 
-        
+
     }
 }

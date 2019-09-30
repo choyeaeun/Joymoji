@@ -67,8 +67,11 @@
      <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\MainThreadExecutor.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\Singleton.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\Test.cs" />
-     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\PlayerControl.cs" />
-     <Compile Include="Assets\JOMOJI_RECORD\Unity Recorder\ShareUploadNext.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\JomojiRecord.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\JoymojiImage.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\JoymojiImagePlayer.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\JoymojiMoviePlayer.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\JoyScreencapture.cs" />
      <Compile Include="Assets\Joymoji\mesh\body\objRotate.cs" />
      <Compile Include="Assets\Joymoji\mesh\coin\coin_animation.cs" />
      <Compile Include="Assets\Joymoji\mesh\sticker\mona_controller.cs" />
@@ -715,12 +718,6 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{9E53C93E-D4A8-9074-FE71-590598571F12}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Unity.Recorder.Editor.csproj">
-      <Project>{79102241-541D-7201-41DD-F54539BC4BFA}</Project>      <Name>Unity.Recorder.Editor</Name>    </ProjectReference>
-    <ProjectReference Include="Unity.Recorder.csproj">
-      <Project>{DE133F35-35A0-64BC-4B72-715BE9F30D90}</Project>      <Name>Unity.Recorder</Name>    </ProjectReference>
-    <ProjectReference Include="Unity.Recorder.Samples.csproj">
-      <Project>{796FF7DD-8863-3F6A-EB71-22E561B2F740}</Project>      <Name>Unity.Recorder.Samples</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

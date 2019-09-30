@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4513026, g: 0.5001748, b: 0.569008, a: 1}
+  m_IndirectSpecularColor: {r: 0.4513026, g: 0.5001747, b: 0.56900805, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5939,6 +5939,12 @@ PrefabInstance:
       propertyPath: _handType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883390857298700560, guid: f84016858d5d713419b32edcdffef021,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c460d7ab40fd1dc4b8e499bb335e71ce,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f84016858d5d713419b32edcdffef021, type: 3}
 --- !u!224 &902728087 stripped
@@ -6654,6 +6660,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 883390857298700560, guid: f84016858d5d713419b32edcdffef021,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7de564eefd5e63c4a9f297de3e5f2828,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f84016858d5d713419b32edcdffef021, type: 3}
 --- !u!224 &1299947477 stripped
