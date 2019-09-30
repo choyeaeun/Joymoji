@@ -268,7 +268,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1457561450}
+      objectReference: {fileID: 1457561452}
     - target: {fileID: 5796334189447773012, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -463,6 +463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2382337754274080032, guid: 4f9a34bd67d0b19419d463ef5dc6d60e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 14233673614656644, guid: 4f9a34bd67d0b19419d463ef5dc6d60e,
         type: 3}
@@ -1025,6 +1030,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5741175460965880601, guid: ca9d2475132f2634a8c88770ec75d902,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1278,6 +1288,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bcb8ce019d0eb6f45b4fe98363a450d0, type: 3}
       propertyPath: m_TagString
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bcb8ce019d0eb6f45b4fe98363a450d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bcb8ce019d0eb6f45b4fe98363a450d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1720,7 +1734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5647059}
+  m_Color: {r: 0.990566, g: 0.9734511, b: 0.22895159, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1849,7 +1863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &890917827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2109,6 +2123,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1434d5a6989296346b8fc8c234630fef, type: 3}
       propertyPath: m_TagString
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1434d5a6989296346b8fc8c234630fef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1434d5a6989296346b8fc8c234630fef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2406,6 +2424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457561451}
   - component: {fileID: 1457561450}
+  - component: {fileID: 1457561452}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -2420,12 +2439,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457561449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fa75c697db400741ac66b3d5d0ad16a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownText: {fileID: 800813948}
+  m_Name: 
 --- !u!4 &1457561451
 Transform:
   m_ObjectHideFlags: 0
@@ -2440,6 +2459,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1457561452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457561449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5342d11f6bed7cf4698b009637454208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownText: {fileID: 800813948}
 --- !u!1001 &1556861667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2786,6 +2818,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 2089999290468025366, guid: 310c6a9f39b29d54f89a94c650262133,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2089999290468259894, guid: 310c6a9f39b29d54f89a94c650262133,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2992,6 +3029,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 883390857298700560, guid: f84016858d5d713419b32edcdffef021,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7de564eefd5e63c4a9f297de3e5f2828,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f84016858d5d713419b32edcdffef021, type: 3}
 --- !u!224 &1705017969 stripped
@@ -3047,7 +3090,7 @@ PrefabInstance:
     - target: {fileID: 5741175460965880601, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5741175460965880601, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
@@ -3451,7 +3494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1947177458
 MonoBehaviour:
   m_ObjectHideFlags: 0
