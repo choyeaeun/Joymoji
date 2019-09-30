@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using System.IO;
+using UnityEngine.UI;
 
 public class JoyHomeUploadGIF : MonoBehaviour
 {
     string JoyHomeAddress = "http://15.164.204.212:5252/upload";
     string realtime = null; //시간
     string gifFileName = null;
+    string filePath = null;
 
     public void sendToHome()
      {
@@ -17,13 +19,11 @@ public class JoyHomeUploadGIF : MonoBehaviour
         
          StartCoroutine(UploadGIF());
      }
-
-   /* void OnMouseDown()
+    
+    void Awake()
     {
-        StartCoroutine(UploadGIF());
-    }*/
-
-
+        filePath = Application.dataPath + "/gifresult/test.gif";
+    }
 
     IEnumerator UploadGIF()
     {
@@ -35,7 +35,7 @@ public class JoyHomeUploadGIF : MonoBehaviour
         ////
 
         //File.GetCreationTime(String)
-        byte[] fileGIF = File.ReadAllBytes("C:/Users/DS/Desktop/GITHUB_4/Assets/gifresult/test.gif"); //file명 수정 
+        byte[] fileGIF = File.ReadAllBytes(filePath); //file명 수정 
         System.DateTime time = System.DateTime.Now; //시간
         realtime = time.ToString("hh/mm/ss"); //시간
 

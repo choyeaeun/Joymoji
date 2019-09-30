@@ -104,6 +104,7 @@
      <Compile Include="Assets\Joymoji\script\KinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUIWaitCursor.cs" />
      <Compile Include="Assets\Joymoji\script\KinectUIWaitOverButton.cs" />
+     <Compile Include="Assets\Joymoji\script\quitGame.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\characterSelection.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\DontDestroy.cs" />
      <Compile Include="Assets\Joymoji\script\selectCharacter\mapSelection.cs" />
