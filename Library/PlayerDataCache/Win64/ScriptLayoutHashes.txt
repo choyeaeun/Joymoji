@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/DS/Desktop/Joymoji.exe
+C:/Users/DS/Desktop/Build_1/Joymoji.exe
 SceneListBegin?
 Assets/Joymoji/Scene/1_start.unity
 Assets/Joymoji/Scene/2_choose.unity
@@ -153,6 +153,7 @@ bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.testController
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 85372f314b54f4d9917bda82e5b7f91c Assembly-CSharp.dll:GetSocialSdk.Capture.Scripts.GetSocialCapture
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.emotionSelection
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoymojiImagePlayer
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.c_back
@@ -171,6 +172,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.genericmanController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.e_confirm
+bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.emotioncontroller
 2ebe25e5804414078fbbd5d7f8778e50 Assembly-CSharp.dll:.BodySceneView
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 2ebe25e5804414078fbbd5d7f8778e50 Assembly-CSharp.dll:.BodySourceView
