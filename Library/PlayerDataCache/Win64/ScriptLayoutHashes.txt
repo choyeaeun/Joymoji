@@ -229,6 +229,7 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BodySceneManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UIBtn
+554e366b0506d0deb169c4edb3875c29 Assembly-CSharp.dll:.musicDestroy
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 c9087d99e22039528856fbd9eda13258 Assembly-CSharp.dll:.JoyScreencapture
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GetSocialSdk.Capture.Scripts.Internal.Recorder.Recorder
@@ -239,3 +240,4 @@ c9087d99e22039528856fbd9eda13258 Assembly-CSharp.dll:.JoyScreencapture
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.objRotate
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GetSocialSdk.Scripts.Internal.Util.MainThreadExecutor
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.howto
+bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.hatController

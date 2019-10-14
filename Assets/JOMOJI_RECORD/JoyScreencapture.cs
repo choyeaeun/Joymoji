@@ -20,7 +20,7 @@ public class JoyScreencapture : MonoBehaviour
         //var mediaOutputFolder = Application.dataPath + "../JoymojiImage";
         System.IO.Directory.CreateDirectory(Application.dataPath + "./JoymojiImage");
         mediaOutputFolder = Application.dataPath + "./JoymojiImage";
-
+        BtnObj = GameObject.FindGameObjectsWithTag("UI");
     }
 
     public void StartTimer()
