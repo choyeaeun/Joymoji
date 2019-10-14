@@ -77,6 +77,7 @@
      <Compile Include="Assets\Joymoji\mesh\emotion\emotioncontroller.cs" />
      <Compile Include="Assets\Joymoji\mesh\emotion\emotionSelection.cs" />
      <Compile Include="Assets\Joymoji\mesh\sticker\mona_controller.cs" />
+     <Compile Include="Assets\Joymoji\music\musicDestroy.cs" />
      <Compile Include="Assets\Joymoji\script\AbstractKinectUICursor.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneManager.cs" />
      <Compile Include="Assets\Joymoji\script\BodySceneView.cs" />
@@ -101,6 +102,7 @@
      <Compile Include="Assets\Joymoji\script\Button\howto.cs" />
      <Compile Include="Assets\Joymoji\script\Button\UIBtn.cs" />
      <Compile Include="Assets\Joymoji\script\controller\DONTdestroyKinect.cs" />
+     <Compile Include="Assets\Joymoji\script\controller\hatController.cs" />
      <Compile Include="Assets\Joymoji\script\controller\testController.cs" />
      <Compile Include="Assets\Joymoji\script\controller\wing_controller.cs" />
      <Compile Include="Assets\Joymoji\script\DestroyObject.cs" />

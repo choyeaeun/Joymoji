@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1996,15 +1996,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.645
       objectReference: {fileID: 0}
-    - target: {fileID: 883390857298700574, guid: f84016858d5d713419b32edcdffef021,
-        type: 3}
-      propertyPath: _handType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 883390857298700560, guid: f84016858d5d713419b32edcdffef021,
         type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883390857298700574, guid: f84016858d5d713419b32edcdffef021,
+        type: 3}
+      propertyPath: _handType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f84016858d5d713419b32edcdffef021, type: 3}
@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.11408925, g: 0.092114635, b: 0.2830189, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
