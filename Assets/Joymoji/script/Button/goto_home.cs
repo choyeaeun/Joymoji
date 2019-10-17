@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class goto_home : MonoBehaviour
 {
     private Button homeBtn;
@@ -14,7 +15,13 @@ public class goto_home : MonoBehaviour
         homeBtn.onClick.AddListener(() =>
         {
             SceneManager.LoadScene("1_start");
-            GameObject.FindWithTag("test").SendMessage("TestInit"); //test nullreference 없애려고 setfalse함
+
+            if (GameObject.FindWithTag("test"))
+            {
+                GameObject.FindWithTag("test").SendMessage("TestInit"); //test nullreference 없애려고 setfalse함
+                Debug.Log("test/TestInit지움");
+            }
+            
         });
 
        
