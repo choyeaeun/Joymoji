@@ -67,6 +67,8 @@
      <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\MainThreadExecutor.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\Internal\Util\Singleton.cs" />
      <Compile Include="Assets\GetSocialCapture\Scripts\Test.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\BackToHome.cs" />
+     <Compile Include="Assets\JOMOJI_RECORD\BackToHomeGIF.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\JomojiRecord.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\JoymojiImage.cs" />
      <Compile Include="Assets\JOMOJI_RECORD\JoymojiImagePlayer.cs" />
@@ -101,6 +103,7 @@
      <Compile Include="Assets\Joymoji\script\Button\goto_home.cs" />
      <Compile Include="Assets\Joymoji\script\Button\howto.cs" />
      <Compile Include="Assets\Joymoji\script\Button\UIBtn.cs" />
+     <Compile Include="Assets\Joymoji\script\controller\buzzController.cs" />
      <Compile Include="Assets\Joymoji\script\controller\DONTdestroyKinect.cs" />
      <Compile Include="Assets\Joymoji\script\controller\hatController.cs" />
      <Compile Include="Assets\Joymoji\script\controller\testController.cs" />

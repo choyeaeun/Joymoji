@@ -280,6 +280,10 @@ PrefabInstance:
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 22320980, guid: 588dc2b8e79a9e940a3c4c4b81babfb0, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 22421046, guid: 588dc2b8e79a9e940a3c4c4b81babfb0, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -1550,12 +1554,12 @@ PrefabInstance:
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 107.71503
+      value: 308
       objectReference: {fileID: 0}
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86.42999
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
@@ -1600,17 +1604,17 @@ PrefabInstance:
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.645
+      value: 0.889326
       objectReference: {fileID: 0}
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.645
+      value: 0.889326
       objectReference: {fileID: 0}
     - target: {fileID: 7967310063145267901, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.645
+      value: 0.889326
       objectReference: {fileID: 0}
     - target: {fileID: 5796334189447773012, guid: ca9d2475132f2634a8c88770ec75d902,
         type: 3}
@@ -1872,15 +1876,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.645
       objectReference: {fileID: 0}
-    - target: {fileID: 883390857298700574, guid: f84016858d5d713419b32edcdffef021,
-        type: 3}
-      propertyPath: _handType
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 883390857298700560, guid: f84016858d5d713419b32edcdffef021,
         type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 883390857298700574, guid: f84016858d5d713419b32edcdffef021,
+        type: 3}
+      propertyPath: _handType
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f84016858d5d713419b32edcdffef021, type: 3}
@@ -1964,7 +1968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa75c697db400741ac66b3d5d0ad16a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
 --- !u!4 &1895861084
 Transform:
   m_ObjectHideFlags: 0

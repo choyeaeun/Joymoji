@@ -50,12 +50,14 @@ public class JoymojiImagePlayer : MonoBehaviour
         {
             gameObject.SetActive(false);
             System.IO.File.Delete(Application.dataPath + "./JoymojiImage/image__001.png");
+            System.IO.Directory.Delete(Application.dataPath + "./JoymojiImage");
         }
 
         catch (FileNotFoundException fe)
         {
             Debug.Log("지울이미지 없음");
         }
+
     }
 
 

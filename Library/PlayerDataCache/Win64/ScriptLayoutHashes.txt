@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/DS/Desktop/Build_1/Joymoji.exe
+C:/Users/DS/Desktop/Joymoji.exe
 SceneListBegin?
 Assets/Joymoji/Scene/1_start.unity
 Assets/Joymoji/Scene/2_choose.unity
@@ -14,7 +14,6 @@ Assets/Joymoji/Scene/StickerScene.unity
 Assets/Joymoji/Scene/ShareScene_img.unity
 Assets/Joymoji/Scene/ShareScene_mp4.unity
 Assets/Joymoji/Scene/ShareScene_gif.unity
-Assets/Joymoji/Scene/S_QRcodeScene.unity
 Assets/Joymoji/Scene/howto.unity
 SceneListEnd?
 50bdf48895f06269d80fe1b022c24a56 Assembly-CSharp.dll:.CaptureGif
@@ -35,6 +34,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.buzzController
 bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.mona_controller
 d2b986769bb3761fe27e82cc86ba4cfb Assembly-CSharp.dll:.KinectUICursor
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BodySourceManager
@@ -44,6 +44,7 @@ e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventH
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoyHomeUploadAvi
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FollowMouse
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.c_A
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BackToHomeGIF
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -111,6 +112,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 fcba137272e83ad25acc1fb49721b6e4 Assembly-CSharp.dll:.KinectManager
+bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.hatController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.characterSelection
 0f477acfc575540335590f280aefea0a Assembly-CSharp.dll:.ModelAnimation
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -167,6 +169,7 @@ bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.testController
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.coin_animation
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.JoyHomeUploadImg
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BackToHome
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.b_back
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
@@ -240,4 +243,3 @@ c9087d99e22039528856fbd9eda13258 Assembly-CSharp.dll:.JoyScreencapture
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.objRotate
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:GetSocialSdk.Scripts.Internal.Util.MainThreadExecutor
 0857b84b364f396f1e7472c2b0e7ef21 Assembly-CSharp.dll:.howto
-bda0990ce2ba5eb0a1ea7e2e1f0f7806 Assembly-CSharp.dll:.hatController

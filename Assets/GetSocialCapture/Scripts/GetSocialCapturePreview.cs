@@ -144,11 +144,12 @@ namespace GetSocialSdk.Capture.Scripts
             {
                 gameObject.SetActive(false);
                 System.IO.File.Delete(Application.dataPath + "/gifresult/test.gif");
+                System.IO.Directory.Delete(Application.dataPath + "/gifresult");
             }
 
             catch (FileNotFoundException fe)
             {
-                Debug.Log("지울이미지 없음");
+                Debug.Log("지울gif 없음");
             }
         }
 
